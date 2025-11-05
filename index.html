@@ -81,13 +81,15 @@
                 <button id="game2-button" onclick="openGame('spribe')">Open</button>
             </div>
         </div>
-        <div class="game">
+        <!--  -->
+        <!-- <div class="game">
             <img src="qu.png" alt="CoinFlip Preview">
             <div class="game-info">
                 <h3 id="game-title">Rocket Queen</h3>
                 <button id="game3-button" onclick="openGame('queen')">Open</button>
             </div>
-        </div>
+        </div> -->
+        <!--  -->
         <div class="game">
             <img src="penafon.png" alt="Penalty Shoot Preview">
             <div class="game-info">
@@ -109,13 +111,15 @@
                 <button id="game10-button" onclick="openGame('coin')">Open</button>
             </div>
         </div>
-        <div class="game">
+        <!--  -->
+        <!-- <div class="game">
             <img src="5.png" alt="Football X Preview">
             <div class="game-info">
                 <h3 id="game11-title">LuckyJet</h3>
                 <button id="game11-button" onclick="openGame('lucky')">Open</button>
             </div>
-        </div>
+        </div> -->
+        <!--  -->
         <div class="game">
             <img src="6.png" alt="CoinFlip Preview">
             <div class="game-info">
@@ -221,3 +225,50 @@ for (let i = 0; i < 2; i++) {
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <script>
+  // Кастомная функция логирования на экран
+  function screenLog(...args) {
+
+    // Преобразуем аргументы в строку (как делает console.log)
+    const message = args.map(arg => {
+      if (typeof arg === 'object') {
+        try {
+          return JSON.stringify(arg, null, 2);
+        } catch (e) {
+          return '[Non-serializable object]';
+        }
+      }
+      return String(arg);
+    }).join(' ');
+
+    const logLine = document.createElement('div');
+    logLine.id = 'logger';
+    logLine.style.position = 'fixed';
+    logLine.style.bottom = '10px';
+    logLine.style.left = '10px';
+    logLine.style.width = 'fit-content';
+    logLine.style.maxHeight = '500px';
+    logLine.style.backgroundColor = 'rgba(0, 0, 0, 0.85)';
+    logLine.style.color = '#0f0';
+    logLine.style.fontFamily = 'monospace';
+    logLine.style.fontSize = '12px';
+    logLine.style.padding = '8px';
+    logLine.style.borderRadius = '4px';
+    logLine.style.overflowY = 'auto';
+    logLine.style.zIndex = '999999999999999999999999999999999999999999999999999';
+    logLine.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+    setTimeout(()=>{
+      document.body.appendChild(logLine);
+    },200);
+
+    // Автопрокрутка вниз
+    // logger.scrollTop = logger.scrollHeight;
+  }
+
+  // Можно даже заменить console.log (опционально)
+  // console.log = screenLog;
+</script> -->

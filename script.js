@@ -938,8 +938,8 @@ function openGame(game) {
             other: 'queen/index.html'
         },
         chick: {
-            ios: 'chick/index.html',
-            other: 'chick/index.html'
+            ios: 'chick/chicky.html',
+            other: 'chick/chicky.html'
         },
         go: {
             ios: 'go/index.html',
